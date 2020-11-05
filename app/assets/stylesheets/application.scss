@@ -11,3 +11,27 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+// @import "cocktails.scss";
+
+a {
+  color: #bfdcae;
+  &:hover {
+    color: #81b214;
+    text-decoration: none;
+  }
+}
+
+.cocktail > a {
+  font-size: 30px;
+  color: #bfdcae;
+  &:hover {
+    color: #81b214;
+    text-decoration: none;
+  }
+}
+
+body {
+  padding-top: 30px;
+  background-color: white;
+}

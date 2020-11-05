@@ -1,0 +1,13 @@
+<h1>Cocktails</h1>
+
+
+<div class="d-flex justify-content-around">
+  <% @cocktails.each do |cocktail| %>
+  <div class="cocktail">
+    <img src="../app/assets/images/jasmijn-hofstra-_SabKwfrBdE-unsplash.jpg" alt="">
+   <%= link_to cocktail.name, cocktail_path(cocktail) %>
+  </div>
+  <% end %>
+</div>
+
+<%= link_to "+ Add a cocktail", new_cocktail_path %>
